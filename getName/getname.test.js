@@ -9,3 +9,13 @@ describe('getName', () => {
     expect(actual).toEqual(expected);
   });
 });
+
+describe('getName', () => {
+  it('should return the name from an object', () => {
+    const character = { _id: '5cf5679a915ecad153ab68c9', name: 'Aang' };
+    const expected = 'Aang';
+    const actual = getName(character);
+
+    expect(actual).toEqual(expected);
+  });
+});
