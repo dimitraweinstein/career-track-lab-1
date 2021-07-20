@@ -9,3 +9,13 @@ describe('copyAndPush', () => {
     expect(actual).toEqual(expected);
   });
 });
+
+describe('unchanged array', () => {
+  it('should check that original array is unchanged', () => {
+    const numbers = [1, 2, 3];
+    const expected = [1, 2, 3, 4];
+    const actual = [...numbers, 4];
+
+    expect(actual).toEqual(expected);
+  });
+});
