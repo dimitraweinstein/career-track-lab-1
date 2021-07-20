@@ -1,9 +1,9 @@
-const copyAndPush = (numbers, n) => {
+const copyAndPush = (array, x) => {
   //fucntion needs to pass in an array of numbers and return a new array with the numbers in original array and a new number added to the end
-  const numbersArray = numbers;
-  const newNumber = n;
+  const originalArrayCopy = array;
+  const newItem = x;
 
-  const newArray = [...numbersArray, newNumber];
+  const newArray = [...originalArrayCopy, newItem];
 
   return newArray;
 };
