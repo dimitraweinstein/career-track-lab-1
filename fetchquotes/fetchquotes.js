@@ -9,9 +9,8 @@ const fetchQuote = async () => {
     text: quote.quote,
     image: quote.image
   }));
+
+  return body[0];
     
-  const singleQuote = body.slice(0, 1);
-    
-  return singleQuote;
 };
 export default fetchQuote;
